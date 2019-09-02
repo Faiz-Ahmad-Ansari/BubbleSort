@@ -5,44 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bubble Sort</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Bubble Sort</h1>
-    <input type="text" id="myInput" placeholder="Type any number or alphabet to sort">
+    <input type="text" id="myInput" placeholder="Type any number or alphabet to Sort">
     <button onclick="BubbleSort()" type="submit">Sort</button>
-    <br><br>
-    <para id="para"></para>
-    <br><br>
-    <para id="para2"></para>
-
-<script>
-    function BubbleSort(){
-    var input = document.getElementById("myInput").value;
-    var para = document.getElementById("para");
-    var arr = input.split("");
-    var array = para.innerHTML = arr;
-    console.log(array);
-
-    var swapp;
-    var n = array.length-1;
-    var x=array;
-    do {
-        swapp = false;
-        for (var i=0; i < n; i++)
-        {
-            if (x[i] > x[i+1])
-            {
-               var temp = x[i];
-               x[i] = x[i+1];
-               x[i+1] = temp;
-               swapp = true;
-            }
-        }
-        n--;
-    } while (swapp);
-    para2.innerHTML = x;
-    console.log(x);
-}
-</script>
+    <br>
+    <p>Array - <span id="para"></span></p>
+    <br>
+    <p>Sorted Array - <span id="para2"></span></p>
+    <br>
+    <hr><footer>
+        Developed by Faiz Ahmad Ansari
+    </footer><hr>
+<script src="hello.js"></script>
 </body>
 </html>
